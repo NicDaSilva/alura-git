@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+
+	function pulaLinha(){
+		document.write("<br>");
+	}
+	
+	function mostrar(calculo){
+		document.write("Se passaram " + Math.round(calculo) + " gerações.");
+		pulaLinha();
+	}
+	
+	function calculaMediaFilhos(anos){
+	var diferenca = anos/28;
+	mostrar(diferenca);
+	}
+	
+	var ano_atual = 2022;
+	var diferencaAnos = 2022 - 1500;
+	
+	calculaMediaFilhos(diferencaAnos);
+</script>

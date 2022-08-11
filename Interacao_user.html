@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaAnoNascimento(anoAtual, idade){
+		var calculo = 0;
+		calculo = anoAtual - idade;
+		return calculo;
+	}
+
+	var nome = prompt("Por favor, informe seu nome: ");
+	var anoAtual = prompt("Por favor, " + nome + ", informe o ano atual: ");
+	var idade = prompt("Por favor, " + nome + ", informe a sua idade: ");
+	var anoNascimento = calculaAnoNascimento(anoAtual, idade);
+	mostra(nome + " nasceu em " + anoNascimento);
+
+	
+</script>

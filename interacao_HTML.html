@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Adivinhar</button>
+
+<script>
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+	
+	function verificaValores(){
+			if (input.value == segredo){
+			alert("Você acertou o valor!");
+		} else {
+			alert("Você errou!");
+		}
+	
+		input.value = "";
+		input.focus();
+	
+	}
+	
+	input.focus();
+	var segredo = 5;
+	
+	var input = document.querySelector("input");
+	
+	var button = document.querySelector("button");
+	
+	button.onclick = verificaValores;
+	
+</script>
